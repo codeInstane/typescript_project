@@ -16,5 +16,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 6060
-#CMD [ "nodemon", "source/server.ts" ]
-CMD [ "npm", "dev" ]
+CMD [ "node", "source/server.ts" ]
+
