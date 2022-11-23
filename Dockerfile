@@ -16,6 +16,6 @@ RUN npm ci --only=production
 COPY . .
 
 EXPOSE 6060
-CMD [ "node", "source/server.ts" ]
-#CMD [ "npm", "run", "dev" ]
+#CMD [ "node", "source/server.ts" ]
+CMD [ "npm", "run", "dev" ]
 
