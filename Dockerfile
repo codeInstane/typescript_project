@@ -10,12 +10,13 @@ COPY package*.json ./
 
 #RUN npm install
 # If you are building your code for production
-RUN npm ci --only=production
-
+#RUN npm ci --only=production
+RUN npm install -g ts-node
 # Bundle app source
 COPY . .
 
 EXPOSE 6060
-CMD [ "node", "source/server.ts" ]
+CMD [ "ts-node-esm", "source/server.ts" ]
 #CMD [ "npm", "run", "dev" ]
+
 
