@@ -13,3 +13,4 @@ http://localhost:6060/posts
 
 run in Docker
 docker build -t buildx . --no-cache
+docker run -p 8080:8080 buildx
